@@ -1,0 +1,215 @@
+body,*{
+    margin: 0;
+    padding: 0;
+}
+
+#personaje{
+position:absolute;
+width: 400px;
+height: 400px;
+bottom: 10px;
+z-index: 1;
+}
+
+
+/* Formas*/
+.cabeza{
+    position: absolute;
+    margin:0;
+    padding:0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 50%;
+}
+
+.cuerpo{
+    margin:0;
+    padding:0;
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
+
+}
+
+.cuerpo::after{
+    margin:0;
+    padding:0;
+    position: absolute;
+    content: "";
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
+
+}
+.pierna{
+    margin:0;
+    padding:0;
+    position: absolute;
+    width: 20px;
+    height: 130px;
+    background-color: white;
+    border: black solid 1px;
+    transform-origin: top center;
+
+}
+.brazo{
+    margin:0;
+    padding:0;
+    position: absolute;
+    width: 20px;
+    height: 120px;
+    background-color: white;
+    border: black solid 1px;
+    transform-origin: top center;
+
+}
+
+
+/* Posiciones iniciales*/
+#cabeza{
+        bottom:232px;
+        left:174px;
+    }
+
+#cuerpo{
+        bottom:131px;
+        left:150px;
+    }
+
+#brazo-Derecho{
+        bottom: 109px;
+        left: 250px;
+
+       
+
+    }
+#brazo-Izquierdo{
+        bottom: 109px;
+        left: 128px;
+
+    
+    }
+#pierna-Derecha{
+        bottom: 0px;
+        left: 204px;
+        
+
+
+    }
+#pierna-Izquierda{
+        bottom: 0px;
+        left: 174px;
+
+
+    }
+
+/* acciones */
+.parado{
+
+    #brazo-Derecho{
+        transform: rotate(0deg);
+    }
+    #brazo-Izquierdo{
+        transform: rotate(0deg);
+    }
+    #pierna-Derecha{
+        transform: rotate(0deg);
+    }
+    #pierna-Izquierda{
+        transform: rotate(0deg);
+    }
+
+}
+
+
+
+
+.brazosHorizontales{
+
+    #brazo-Derecho{
+        transform: rotate(-90deg);
+    }
+
+    #brazo-Izquierdo{
+        transform: rotate(90deg);
+    }
+
+    #pierna-Izquierda{
+        transform: rotate(0deg);
+    }
+
+    #pierna-Derecha{
+        transform: rotate(0deg);
+    }
+
+}
+
+.brazosArriba{
+
+    #brazo-Derecho{
+        transform: rotate(-180deg);
+    }
+    #brazo-Izquierdo{
+        transform: rotate(180deg);
+    }
+    #pierna-Derecha{
+        transform: rotate(0deg);
+    }
+    #pierna-Izquierda{
+        transform: rotate(0deg);
+    }
+
+}
+
+.pasoIzquierdo{
+
+    #brazo-Derecho{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(20deg);
+    }
+    #brazo-Izquierdo{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(-20deg);
+    }
+    #pierna-Derecha{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(-30deg);
+    }
+    #pierna-Izquierda{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(30deg);
+    }
+
+}
+
+.pasoDerecho{
+
+    #brazo-Derecho{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(-20deg);
+    }
+    #brazo-Izquierdo{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(20deg);
+    }
+    #pierna-Derecha{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(30deg);
+    }
+    #pierna-Izquierda{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(-30deg);
+    }
+
+}
+
