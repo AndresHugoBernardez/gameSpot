@@ -52,7 +52,7 @@ bailar() {
     this.stop();
     this.accion = HOMBRE001_BAILANDO1;
     this.personaje.classList.remove("parado");
-    this.personaje.classList.add("pasoBaile1");
+    this.personaje.classList.add("pasoBaile6");
     this.bailando();
 }
 bailando() {
@@ -64,11 +64,24 @@ bailando() {
     // Alternar
     if (this.personaje.classList.contains('pasoBaile1')) {
         this.personaje.classList.replace('pasoBaile1', 'pasoBaile2');
-    } else {
-        this.personaje.classList.replace('pasoBaile2', 'pasoBaile1');
+    } 
+    else  if (this.personaje.classList.contains('pasoBaile2')) {
+        this.personaje.classList.replace('pasoBaile2', 'pasoBaile3');
+    } 
+    else if (this.personaje.classList.contains('pasoBaile3')) {
+        this.personaje.classList.replace('pasoBaile3', 'pasoBaile4');
+    } 
+    else  if (this.personaje.classList.contains('pasoBaile4')) {
+        this.personaje.classList.replace('pasoBaile4', 'pasoBaile5');
+    } 
+    else if (this.personaje.classList.contains('pasoBaile5')) {
+        this.personaje.classList.replace('pasoBaile5', 'pasoBaile6');
+    } 
+    else {
+        this.personaje.classList.replace('pasoBaile6', 'pasoBaile1');
     }
 
-    this.Timeout = setTimeout(() => this.bailando(), 250);
+    this.Timeout = setTimeout(() => this.bailando(), 500);
 }
 
 
@@ -84,6 +97,10 @@ bailando() {
       this.personaje.classList.remove("pasoDerecho");
       this.personaje.classList.remove("pasoBaile1");
       this.personaje.classList.remove("pasoBaile2");
+      this.personaje.classList.remove("pasoBaile3");
+      this.personaje.classList.remove("pasoBaile4");
+      this.personaje.classList.remove("pasoBaile5");
+      this.personaje.classList.remove("pasoBaile6");
       this.personaje.classList.add("parado");
 
 

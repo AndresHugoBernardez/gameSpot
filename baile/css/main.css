@@ -30,9 +30,9 @@ header{
 
 .dancingFloor{
     position: relative;
-    width: 500px;
+    width: 600px;
 
-    height: 500px;
+    height: 600px;
     background-color: lightgray;
 
 }
@@ -52,18 +52,26 @@ header{
 .buttons{
     width: 200px;
     margin-top: 20px;
+    height: 100%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items:center;
     flex-direction: column;
+
     
+}
+
+.buttons button{
+    padding: 20px;
+    margin: 10px;
 }
 
 
 
 #hombre1{
-    width: 400px;
-    height: 400px;
+    position: relative;
+    width: 500px;
+    height: 500px;
     background-color: tomato;
 
 }

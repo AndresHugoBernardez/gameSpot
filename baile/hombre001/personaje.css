@@ -1,11 +1,13 @@
 
 
 #personaje{
-position:relative;
+position:absolute;
 width: 400px;
 height: 400px;
+left: 10px;
 bottom: 10px;
-z-index: 1;
+background-color: yellow;
+
 }
 
 
@@ -125,6 +127,9 @@ z-index: 1;
     #pierna-Izquierda{
         transform: rotate(0deg);
     }
+    #personaje{
+        transform: translateX(0px);
+    }
 
 }
 
@@ -214,7 +219,8 @@ z-index: 1;
 
 
 .pasoBaile1{
-
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0px);
     #cabeza{
         transition: transform 0.5s ease-in-out;
         transform: translateY(-2px) translateX(+0px);
@@ -225,11 +231,11 @@ z-index: 1;
     }
     #brazo-Derecho{
         transition: transform 0.5s ease-in-out;
-        transform: rotate(-10deg);
+        transform: rotate(-30deg);
     }
     #brazo-Izquierdo{
         transition: transform 0.5s ease-in-out;
-        transform: rotate(-10deg);
+        transform: rotate(30deg);
     }
     #pierna-Derecha{
         transition: transform 0.5s ease-in-out;
@@ -245,6 +251,8 @@ z-index: 1;
 }
 
 .pasoBaile2{
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(20px);
     #cabeza{
         transition: transform 0.5s ease-in-out;
         transform: translateY(+2px) translateX(+2px);
@@ -256,11 +264,11 @@ z-index: 1;
 
     #brazo-Derecho{
         transition: transform 0.5s ease-in-out;
-        transform: rotate(10deg);
+        transform: rotate(30deg);
     }
     #brazo-Izquierdo{
         transition: transform 0.5s ease-in-out;
-        transform: rotate(10deg);
+        transform: rotate(-30deg);
     }
     #pierna-Derecha{
         transition: transform 0.5s ease-in-out;
@@ -273,5 +281,145 @@ z-index: 1;
 
 
 }
+
+
+
+.pasoBaile3{
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0px);
+
+    #cabeza{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(-2px) translateX(+0px);
+    }
+    #cuerpo{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(-2px) translateX(+0px);
+    }
+    #brazo-Derecho{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(-215deg);
+    }
+    #brazo-Izquierdo{
+        transition: transform 0.2s ease-in-out;
+        transform: rotate(215deg);
+    }
+    #pierna-Derecha{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(10deg);
+    }
+    #pierna-Izquierda{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-10deg);
+    }
+
+
+
+}
+.pasoBaile4{
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(20px);
+   #cabeza{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(2px) translateX(+0px);
+    }
+    #cuerpo{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(2px) translateX(+0px);
+    }
+
+    #brazo-Derecho{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(180);
+    }
+    #brazo-Izquierdo{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-180deg);
+    }
+    #pierna-Derecha{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-20deg);
+    }
+    #pierna-Izquierda{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(20deg);
+    }
+
+
+
+}
+
+.pasoBaile5{
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0px);
+   #cabeza{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(-2px) translateX(+0px);
+    }
+    #cuerpo{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(-2px) translateX(+0px);
+    }
+
+
+    #brazo-Derecho{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(90deg);
+    }
+    #brazo-Izquierdo{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-90deg);
+    }
+    #pierna-Derecha{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(10deg);
+    }
+    #pierna-Izquierda{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-10deg);
+    }
+
+
+    
+
+
+}
+
+.pasoBaile6{
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(20px);
+
+    #cabeza{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(+2px) translateX(+2px);
+    }
+    #cuerpo{
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(+2px) translateX(+2px);
+    }
+
+    #brazo-Derecho{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(45deg);
+    }
+    #brazo-Izquierdo{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-45deg);
+    }
+    #pierna-Derecha{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(-20deg);
+    }
+    #pierna-Izquierda{
+        transition: transform 0.5s ease-in-out;
+        transform: rotate(20deg);
+    }
+
+        
+
+
+
+}
+
 
 
